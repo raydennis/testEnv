@@ -1,0 +1,16 @@
+- name: Install packages
+  package: pkg={{ item }} state=latest 
+  with_items:
+      - zsh
+      - git
+      - git-core
+
+- name: Clone oh-my-zsh repo
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git 
+       dest=/home/vagrant/.oh-my-zsh
+
+- name: deploy ~/.zshrc
+  command: cp /home/vagrant/.oh-my-zsh/templates/zshrc.zsh-template /home/vagrant/.zshrc
+
+- name: Set zsh as default shell
+  user: name=vagrant shell=/bin/zsh

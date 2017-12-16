@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/raydennis/Documents/GitHub/testEnv","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}},"virtualbox":{"/var/www/django-app":{"guestpath":"/var/www/django-app","hostpath":"/Users/raydennis/Documents/GitHub/testEnv/app","disabled":false,"__vagrantfile":true}}}
